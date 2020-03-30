@@ -1,0 +1,30 @@
+package cn.comparator;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Test {
+
+    public static void main(String[] args) {
+        // ?????????????? ?洢????????
+        ArrayList<Student> list = new ArrayList<Student>();
+
+        list.add(new Student("rose",18));
+        list.add(new Student("jack",16));
+        list.add(new Student("abc",16));
+        list.add(new Student("ace",17));
+        list.add(new Student("mark",16));
+
+
+        /*
+          ????? ???????????? ????
+         */
+        Collections.sort(list);//??? ??list?????????  ???????????Comparable???
+
+        for (Student student : list) {
+            System.out.println(student);
+        }
+
+
+    }
+}
